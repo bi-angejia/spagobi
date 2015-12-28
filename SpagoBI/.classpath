@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SpagoBIUtils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SpagoBIUtilsJSON"/>
+	<classpathentry kind="lib" path="/SpagoBIUtils/lib/commonj-twm.jar"/>
+	<classpathentry kind="lib" path="/SpagoBIUtils/lib/foo-commonj.jar"/>
+	<classpathentry kind="lib" path="web-content/WEB-INF/lib/sbi.security.ldap-5.1.0.jar" sourcepath="/SpagoBILdapSecurityProvider/src/it/eng/spagobi/security"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SpagoBIDAO"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="#system#;jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/SpagoBILdapSecurityProvider"/>
+	<classpathentry kind="lib" path="E:/mysql/mysql-connector-java-5.1.26-bin.jar"/>
+	<classpathentry kind="lib" path="E:/mysql/hive-jdbc-1.1.0-cdh5.4.4.jar"/>
+	<classpathentry kind="lib" path="E:/mysql/hive-common-1.1.0-cdh5.4.4.jar"/>
+	<classpathentry kind="lib" path="E:/spagobi/spagobi_server/SpagoBI5.1/lib/hive-metastore-0.8.1.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/hadoop-common-2.2.0.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/hive-common-1.2.1.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/hive-exec-1.2.1.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/hive-jdbc-1.1.0-cdh5.4.4.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/httpcore-4.4.3.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/httpcore-ab-4.4.3.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/httpcore-nio-4.4.3.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/logback-classic-0.9.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/logback-core-0.9.6.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/slf4j.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/slf4j-jcl-1.0.1.jar"/>
+	<classpathentry kind="lib" path="F:/安个家/jar/apache-httpcomponents-httpclient.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nicole/Downloads/jersey-server-1.8.jar"/>
+	<classpathentry kind="output" path="web-content/WEB-INF/classes"/>
+</classpath>

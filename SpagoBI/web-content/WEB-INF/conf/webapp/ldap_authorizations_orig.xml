@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LDAP_AUTHORIZATIONS default="FALSE">
+	<CONFIG>
+		<USER_DN>DC=ad,DC=corp,DC=angejia,DC=com</USER_DN>
+		
+		<HOST>ad.corp.angejia.com</HOST>
+		<PORT>389</PORT>	
+		<ADMIN_USER>CN=bi,OU=angejia,DC=ad,DC=corp,DC=angejia,DC=com</ADMIN_USER>
+		<ADMIN_PSW>fc1b0a88d3bfbfd3c5f01b32e90450ce</ADMIN_PSW>
+		
+									
+		
+		<SEARCH_ROOT>OU=angejia</SEARCH_ROOT>
+		<OBJECTCLASS>person</OBJECTCLASS>
+		<USER_ID_ATTRIBUTE_NAME>sAMAccountName</USER_ID_ATTRIBUTE_NAME> 
+		<USER_MEMBEROF_ATTRIBUTE_NAME>sAMAccountName</USER_MEMBEROF_ATTRIBUTE_NAME>
+	
+		<ATTRIBUTES_ID name="cn">cn</ATTRIBUTES_ID>
+		<ATTRIBUTES_ID name="sAMAccountName">sAMAccountName</ATTRIBUTES_ID>
+		<ATTRIBUTES_ID name="sn">sn</ATTRIBUTES_ID>			
+		
+		
+	</CONFIG>
+
+	
+</LDAP_AUTHORIZATIONS>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LDAP_AUTHORIZATIONS default="FALSE">
+	<CONFIG>
+		<HOST>ad.corp.angejia.com</HOST>
+		<PORT>389</PORT>	
+		<ADMIN_USER>CN=bi,OU=angejia,DC=ad,DC=corp,DC=angejia,DC=com</ADMIN_USER>		
+		<ADMIN_PSW>Angejia2016</ADMIN_PSW>
+		<BASE_DN>DC=ad,DC=corp,DC=angejia,DC=com</BASE_DN>
+		<MYSQL_URL>jdbc:mysql://cdh-manager.angejia.club:3306/spagobi</MYSQL_URL>
+		<MYSQL_USER>hadoop</MYSQL_USER>
+		<MYSQL_PWD>angejia888</MYSQL_PWD>
+		
+		
+		<USER_SEARCH_PATH>OU=angejia</USER_SEARCH_PATH>
+		<USER_OBJECT_CLASS>person</USER_OBJECT_CLASS>
+		<USER_ID_ATTRIBUTE_NAME>sAMAccountName</USER_ID_ATTRIBUTE_NAME> 
+		<USER_NAME_ATTRIBUTE_NAME>mail</USER_NAME_ATTRIBUTE_NAME> 
+		<SUPER_ADMIN_ATTRIBUTE_NAME>distinguishedName</SUPER_ADMIN_ATTRIBUTE_NAME>		
+		<USER_MEMBEROF_ATTRIBUTE_NAME>distinguishedName</USER_MEMBEROF_ATTRIBUTE_NAME>
+	 
+	
+  <USER_ATTRIBUTE name="id">sAMAccountName</USER_ATTRIBUTE> <!-- LDAP attribute to be considered as SpagoBI attribute -->
+    <USER_ATTRIBUTE name="name">cn</USER_ATTRIBUTE>
+    <USER_ATTRIBUTE name="mail">mail</USER_ATTRIBUTE>
+    <USER_ATTRIBUTE name="memberOf">distinguishedName</USER_ATTRIBUTE>
+    <USER_ATTRIBUTE name="superAdmin">distinguishedName</USER_ATTRIBUTE>
+            
+	
+	
+		<GROUP_SEARCH_PATH>OU=angejia</GROUP_SEARCH_PATH> <!-- SpagoBI will look for groups under this node -->
+		<GROUP_OBJECT_CLASS>organizationalUnit</GROUP_OBJECT_CLASS> <!-- class for groups' objects -->
+		<GROUP_ID_ATTRIBUTE_NAME>ou</GROUP_ID_ATTRIBUTE_NAME> <!-- the attribute containing the name of the group -->
+		
+		<!-- list of the users' attributes to be loaded when querying the LDAP -->
+		<GROUP_ATTRIBUTE>ou</GROUP_ATTRIBUTE>
+		<!-- GROUP_ATTRIBUTE>member</GROUP_ATTRIBUTE -->
+		
+		<ACCESS_GROUP_NAME></ACCESS_GROUP_NAME> <!-- Access group name: if specified, users must belong to this group in order to enter SpagoBI -->
+		<GROUP_MEMBERS_ATTRIBUTE_NAME></GROUP_MEMBERS_ATTRIBUTE_NAME>  <!-- this attribute has to contain the list of users belonging to this group, in case the ACCESS_GROUP_NAME is specified -->
+	</CONFIG>
+</LDAP_AUTHORIZATIONS>
